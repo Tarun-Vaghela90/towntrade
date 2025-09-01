@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Verified</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #d4fc79, #96e6a1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      max-width: 420px;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+    h1 {
+      color: #1f1068;
+      font-size: 28px;
+      margin-bottom: 10px;
+      animation: scaleUp 0.5s ease-in-out;
+    }
+    h2 {
+      color: #28a745;
+      font-size: 28px;
+      margin-bottom: 10px;
+      animation: scaleUp 0.5s ease-in-out;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #28a745, #218838);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      background: linear-gradient(135deg, #218838, #1e7e34);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes scaleUp {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> 🏙️ TownTrade</h1>
+    <h2>✅ Email Verified</h2>
+    <p>Your email has been successfully verified.<br>You can now log in to your account.</p>
+    <a href="http://localhost:5173/">Go to Login</a>
+  </div>
+</body>
+</html>
