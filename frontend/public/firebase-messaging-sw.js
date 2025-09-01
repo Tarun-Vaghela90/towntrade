@@ -14,14 +14,4 @@ apiKey: import.meta.env.VITE_API_KEY,
 
 const messaging = firebase.messaging();
 
-// messaging.onBackgroundMessage((payload) => {
-//   console.log("[firebase-messaging-sw.js] Received background message", payload);
 
-//   const title = payload.data?.title || payload.notification?.title || "New Message";
-//   const options = {
-//     body: payload.data?.body || payload.notification?.body || "",
-//     icon: "/logo192.png",
-//   };
-
-//   self.registration.showNotification(title, options);
-// });
