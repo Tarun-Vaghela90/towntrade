@@ -1,17 +1,16 @@
 import { useState } from "react";
 import Navbar from "../../Navigation/Navbar";
-import { Outlet ,useLocation} from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import CategoryTopbar from "../../products/CategoryTopbar";
-import {  useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 export default function PublicLayout() {
   const [searchParams] = useSearchParams();
   const location = useLocation();
 
-  const showCategoryTopbar =
-    location.pathname.startsWith("/products") 
-    // location.pathname.startsWith("/product/");
+  const showCategoryTopbar = location.pathname.startsWith("/products");
+  // location.pathname.startsWith("/product/");
 
   const [category, setCategory] = useState(searchParams.get("category") || "");
 
