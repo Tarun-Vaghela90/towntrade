@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../../Navigation/Navbar";
 import { Outlet ,useLocation} from "react-router-dom";
 
-import CategoryTopbar from "../../products/Categorytopbar";
+import CategoryTopbar from "../../products/CategoryTopbar";
 import {  useSearchParams } from "react-router-dom";
 
 export default function PublicLayout() {
