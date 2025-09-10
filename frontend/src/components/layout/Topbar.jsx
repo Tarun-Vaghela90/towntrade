@@ -294,11 +294,11 @@ useEffect(() => {
                     </NavigationMenuTrigger>
 
                     {/* Increased width and centered content */}
-                    <NavigationMenuContent className="p-4 min-w-[178px]  ">
+                    <NavigationMenuContent className="p-4 min-w-[150px]  ">
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           {/* <User className="w-5 h-5" />  */}
-                          <Profile buttonDesign="w-38" />
+                          <Profile buttonDesign="w-28"  />
                         </li>
                         
 
