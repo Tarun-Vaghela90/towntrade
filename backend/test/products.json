@@ -1,0 +1,194 @@
+[
+  {
+    "title": "Apple iPhone 15 Pro",
+    "brand": "Apple",
+    "description": "Latest iPhone with A17 Pro chip, titanium frame, and ProMotion OLED display.",
+    "price": 1299,
+    "images": ["https://picsum.photos/seed/iphone15/300/200"],
+    "locationName": "New York"
+  },
+  {
+    "title": "Apple iPhone 15 Pro Max",
+    "brand": "Apple",
+    "description": "The largest iPhone with 6.7-inch display, A17 Pro chip, and advanced telephoto camera.",
+    "price": 1499,
+    "images": ["https://picsum.photos/seed/iphone15max/300/200"],
+    "locationName": "San Francisco"
+  },
+  {
+    "title": "Samsung Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "description": "Flagship Android phone with Snapdragon 8 Gen 2, S-Pen, and 200MP camera.",
+    "price": 1199,
+    "images": ["https://picsum.photos/seed/galaxys23/300/200"],
+    "locationName": "Chicago"
+  },
+  {
+    "title": "Google Pixel 8 Pro",
+    "brand": "Google",
+    "description": "AI-powered smartphone with Tensor G3 chip, upgraded cameras, and Android 14.",
+    "price": 999,
+    "images": ["https://picsum.photos/seed/pixel8/300/200"],
+    "locationName": "Austin"
+  },
+  {
+    "title": "OnePlus 11 5G",
+    "brand": "OnePlus",
+    "description": "High-performance smartphone with Hasselblad cameras and fast charging.",
+    "price": 799,
+    "images": ["https://picsum.photos/seed/oneplus11/300/200"],
+    "locationName": "Seattle"
+  },
+  {
+    "title": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "description": "Industry-leading noise cancelling headphones with up to 30 hours battery.",
+    "price": 399,
+    "images": ["https://picsum.photos/seed/sonywh1000xm5/300/200"],
+    "locationName": "Los Angeles"
+  },
+  {
+    "title": "Bose QuietComfort 45",
+    "brand": "Bose",
+    "description": "Wireless noise cancelling headphones with balanced sound profile.",
+    "price": 329,
+    "images": ["https://picsum.photos/seed/boseqc45/300/200"],
+    "locationName": "Boston"
+  },
+  {
+    "title": "Apple MacBook Air M2",
+    "brand": "Apple",
+    "description": "Lightweight laptop powered by Apple M2 chip with all-day battery life.",
+    "price": 1249,
+    "images": ["https://picsum.photos/seed/macbookair/300/200"],
+    "locationName": "New York"
+  },
+  {
+    "title": "Dell XPS 13 Plus",
+    "brand": "Dell",
+    "description": "Premium ultrabook with 13.4-inch display, Intel 13th Gen CPU, and sleek design.",
+    "price": 1399,
+    "images": ["https://picsum.photos/seed/dellxps/300/200"],
+    "locationName": "Houston"
+  },
+  {
+    "title": "HP Spectre x360 14",
+    "brand": "HP",
+    "description": "Convertible 2-in-1 laptop with OLED touchscreen and stylus support.",
+    "price": 1299,
+    "images": ["https://picsum.photos/seed/hpspectre/300/200"],
+    "locationName": "Dallas"
+  },
+  {
+    "title": "Lenovo ThinkPad X1 Carbon Gen 11",
+    "brand": "Lenovo",
+    "description": "Business-class ultrabook with robust build, long battery, and Intel vPro.",
+    "price": 1499,
+    "images": ["https://picsum.photos/seed/thinkpadx1/300/200"],
+    "locationName": "San Diego"
+  },
+  {
+    "title": "Nike Air Jordan 1 Retro High",
+    "brand": "Nike",
+    "description": "Iconic basketball sneakers with premium leather and timeless style.",
+    "price": 199,
+    "images": ["https://picsum.photos/seed/jordan1/300/200"],
+    "locationName": "Chicago"
+  },
+  {
+    "title": "Adidas Ultraboost 23",
+    "brand": "Adidas",
+    "description": "Running shoes with Boost midsole cushioning for maximum comfort.",
+    "price": 180,
+    "images": ["https://picsum.photos/seed/ultraboost/300/200"],
+    "locationName": "Portland"
+  },
+  {
+    "title": "Puma RS-X Efekt",
+    "brand": "Puma",
+    "description": "Chunky sneakers with bold design and cushioned midsole.",
+    "price": 150,
+    "images": ["https://picsum.photos/seed/pumarsx/300/200"],
+    "locationName": "Atlanta"
+  },
+  {
+    "title": "Sony Bravia XR 65” OLED",
+    "brand": "Sony",
+    "description": "4K OLED TV with Google TV, HDR, and Cognitive Processor XR.",
+    "price": 2199,
+    "images": ["https://picsum.photos/seed/bravia/300/200"],
+    "locationName": "Miami"
+  },
+  {
+    "title": "LG C3 55” OLED TV",
+    "brand": "LG",
+    "description": "Popular OLED TV with Dolby Vision, Dolby Atmos, and AI processor.",
+    "price": 1799,
+    "images": ["https://picsum.photos/seed/lgc3/300/200"],
+    "locationName": "Phoenix"
+  },
+  {
+    "title": "Samsung QN90C Neo QLED 65”",
+    "brand": "Samsung",
+    "description": "High brightness Neo QLED with mini-LED technology and HDR10+.",
+    "price": 2099,
+    "images": ["https://picsum.photos/seed/qn90c/300/200"],
+    "locationName": "Denver"
+  },
+  {
+    "title": "Apple Watch Series 9",
+    "brand": "Apple",
+    "description": "Smartwatch with S9 chip, always-on display, and health tracking.",
+    "price": 499,
+    "images": ["https://picsum.photos/seed/watch9/300/200"],
+    "locationName": "San Jose"
+  },
+  {
+    "title": "Samsung Galaxy Watch 6 Classic",
+    "brand": "Samsung",
+    "description": "WearOS smartwatch with rotating bezel and health monitoring.",
+    "price": 399,
+    "images": ["https://picsum.photos/seed/galaxywatch/300/200"],
+    "locationName": "Orlando"
+  },
+  {
+    "title": "Garmin Forerunner 965",
+    "brand": "Garmin",
+    "description": "GPS sports smartwatch for runners with AMOLED display.",
+    "price": 599,
+    "images": ["https://picsum.photos/seed/garmin965/300/200"],
+    "locationName": "Salt Lake City"
+  },
+  {
+    "title": "Dyson V15 Detect Absolute",
+    "brand": "Dyson",
+    "description": "Cordless vacuum with laser dust detection and powerful suction.",
+    "price": 749,
+    "images": ["https://picsum.photos/seed/dysonv15/300/200"],
+    "locationName": "Newark"
+  },
+  {
+    "title": "iRobot Roomba j7+",
+    "brand": "iRobot",
+    "description": "Smart robot vacuum with obstacle avoidance and self-empty base.",
+    "price": 799,
+    "images": ["https://picsum.photos/seed/roomba/300/200"],
+    "locationName": "Philadelphia"
+  },
+  {
+    "title": "Instant Pot Duo Plus 9-in-1",
+    "brand": "Instant",
+    "description": "Multi-cooker with pressure cook, slow cook, steam, and sauté modes.",
+    "price": 149,
+    "images": ["https://picsum.photos/seed/instantpot/300/200"],
+    "locationName": "Las Vegas"
+  },
+  {
+    "title": "Nespresso Vertuo Next",
+    "brand": "Nespresso",
+    "description": "Smart coffee maker with capsule system and Bluetooth connectivity.",
+    "price": 199,
+    "images": ["https://picsum.photos/seed/nespresso/300/200"],
+    "locationName": "Tampa"
+  }
+]

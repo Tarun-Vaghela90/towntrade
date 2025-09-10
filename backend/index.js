@@ -49,7 +49,7 @@ app.use("/api/reviews",require('./routes/reviewRoutes'))
 app.use("/api/admin/products", require("./routes/admin/BulkProductRoutes"));
 app.use("/api/admin/users", require("./routes/admin/BulkUserRoutes"));
 app.use("/api/admin/reports", require("./routes/admin/BulkReportRoutes"));
-
+app.use('/api/ai',require('./routes/gemini/productDescription'))
 // MongoDB connection
 mongoose
   .connect(process.env.MONGO_URI)

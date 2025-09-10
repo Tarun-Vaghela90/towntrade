@@ -53,8 +53,7 @@ const schema = yup.object().shape({
   locationName: yup.string().required("Location is required"),
 });
 export default function ProductModal({ title, buttonName }) {
-
-  const {currentUser} = useSelector((state)=>state.user)
+  const { currentUser } = useSelector((state) => state.user);
   const form = useForm({
     resolver: yupResolver(schema),
     defaultValues: {
@@ -71,6 +70,7 @@ export default function ProductModal({ title, buttonName }) {
 
   const [categories, setCategories] = useState([]);
   const [open, setOpen] = useState(false); // ✅ control modal open/close
+  const [aiLoading, setAiLoading] = useState(false);
 
   const fetchCategories = async () => {
     try {
@@ -118,6 +118,59 @@ export default function ProductModal({ title, buttonName }) {
         console.error("Error saving product:", err);
         toast.error("❌ Failed to save product. Try again.");
       });
+  };
+
+  const getAiDescription = async () => {
+    if (aiLoading) return; // ⛔ prevent double execution
+    setAiLoading(true);
+
+    try {
+      const values = form.getValues();
+
+      let images =
+        values.images instanceof FileList
+          ? Array.from(values.images)
+          : values.images;
+
+      if (!images || images.length === 0) {
+        toast.error("❌ Please upload at least one image.");
+        setAiLoading(false); // ✅ re-enable button
+        return;
+      }
+
+      if (images.length > 4) {
+        toast.info(
+          "ℹ️ Only the first 4 images will be used for AI description."
+        );
+        images = images.slice(0, 4);
+      }
+
+      const payload = new FormData();
+      images.forEach((file) => {
+        payload.append("images", file);
+      });
+
+      const res = await api.post("/ai/aidesc", payload, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          Authorization: `Bearer YOUR_TOKEN_HERE`,
+        },
+      });
+
+      if (res.data?.ai_description) {
+        form.setValue("description", res.data.ai_description);
+        toast.success("✨ AI description generated!");
+      } else {
+        toast.error("❌ AI did not return a description.");
+      }
+
+      return res.data;
+    } catch (err) {
+      console.error("Error generating AI description:", err);
+      toast.error("❌ Failed to generate AI description.");
+    } finally {
+      setAiLoading(false); // ✅ always re-enable after finish
+    }
   };
 
   return (
@@ -285,6 +338,20 @@ export default function ProductModal({ title, buttonName }) {
                     </FormItem>
                   )}
                 />
+                <button
+                  type="button"
+                  onClick={getAiDescription}
+                  disabled={aiLoading}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl font-medium shadow-md transition-all duration-300 
+    ${
+      aiLoading
+        ? "bg-gray-400 cursor-not-allowed"
+        : "bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700"
+    }`}
+                >
+                  {aiLoading ? "⏳ Generating..." : "✨ AI Description"}
+                </button>
+
                 <FormField
                   control={form.control}
                   name="description"
@@ -309,8 +376,8 @@ export default function ProductModal({ title, buttonName }) {
                   placeholder="Enter location"
                 />
 
-                {currentUser?.user?.role === 'premium' &&
-                     (<FormField
+                {currentUser?.user?.role === "premium" && (
+                  <FormField
                     control={form.control}
                     name="isFeatured"
                     render={({ field }) => (
@@ -335,8 +402,8 @@ export default function ProductModal({ title, buttonName }) {
                         <FormMessage />
                       </FormItem>
                     )}
-                  />)
-                }
+                  />
+                )}
               </div>
             </div>
 
