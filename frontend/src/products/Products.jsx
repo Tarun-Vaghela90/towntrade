@@ -20,7 +20,6 @@ import {
   setSelectedProduct,
 } from "../redux/slices/productSlice";
 import { setCurrentUser } from "../redux/slices/userSlice";
-import CategoryTopbar from "./Categorytopbar";
 import { useCategory } from "../components/hooks/CategoryContext";
 import { getUserLocation } from "../utils/getUserLocation";
 export default function Products() {
